@@ -3,25 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Inicio - Cooperativa de Perfumes</title>
-   <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-<link rel="manifest" href="/icons/site.webmanifest">
-  <link rel="stylesheet" href="estilos.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
+  <link rel="manifest" href="../icons/site.webmanifest">
+  <link rel="stylesheet" href="../estilos.css">
 </head>
 <body>
   <header>
     <h1>Cooperativa de Perfumes</h1>
     <nav>
-      <a href="index.html">Inicio</a>
+      <a href="index.html" class="activo">Inicio</a>
       <a href="catalogo.html">Catálogo</a>
       <a href="quienes-somos.html">Quiénes somos</a>
       <a href="contacto.html">Contacto</a>
     </nav>
   </header>
 
-  <!-- SECCIÓN HERO (portada con imagen) -->
-  <section class="hero">
+  <section class="hero fade-in">
     <div class="hero-content">
       <h2>Perfumes que inspiran</h2>
       <p>Fragancias artesanales creadas con pasión y naturaleza.</p>
@@ -29,8 +28,7 @@
     </div>
   </section>
 
-  <!-- SECCIÓN BREVE PRESENTACIÓN -->
-  <main class="inicio">
+  <main class="inicio fade-in">
     <h2>Bienvenidos</h2>
     <p>En <strong>Senzia</strong>, creamos perfumes únicos inspirados en flores, frutas y emociones. Nuestra cooperativa está conformada por mujeres emprendedoras que apuestan por lo artesanal, lo natural y lo auténtico.</p>
     <p>Gracias por visitarnos. ¡Te invitamos a descubrir nuestras esencias!</p>
@@ -39,18 +37,18 @@
   <footer>
     <p>&copy; 2025 Senzia</p>
   </footer>
-  <script>
-  const elements = document.querySelectorAll('.fade-in');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  });
 
-  elements.forEach(el => observer.observe(el));
-</script>
+  <script>
+    const elements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+    elements.forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
