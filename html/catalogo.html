@@ -3,31 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <title>Catálogo - Cooperativa de Perfumes</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-<link rel="manifest" href="/icons/site.webmanifest">
-  <link rel="stylesheet" href="estilos.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
+  <link rel="manifest" href="../icons/site.webmanifest">
+  <link rel="stylesheet" href="../estilos.css">
 </head>
 <body>
   <header>
     <h1>Catálogo de Perfumes</h1>
     <nav>
       <a href="index.html">Inicio</a>
-      <a href="catalogo.html">Catálogo</a>
+      <a href="catalogo.html" class="activo">Catálogo</a>
       <a href="quienes-somos.html">Quiénes somos</a>
       <a href="contacto.html">Contacto</a>
     </nav>
   </header>
 
-  <main class="catalogo">
+  <main class="catalogo fade-in">
     <div class="producto">
-      <img src="img/perfume1.jpg" alt="Perfume Floral">
+      <img src="../img/perfume1.jpg" alt="Perfume floral con jazmín y rosa">
       <h3>Perfume Floral</h3>
       <p>50ml - Jazmín y rosa</p>
     </div>
     <div class="producto">
-      <img src="img/perfume2.jpg" alt="Perfume Cítrico">
+      <img src="../img/perfume2.jpg" alt="Perfume cítrico con limón y bergamota">
       <h3>Perfume Cítrico</h3>
       <p>50ml - Limón y bergamota</p>
     </div>
@@ -37,18 +37,18 @@
   <footer>
     <p>© 2025 Senzia</p>
   </footer>
-  <script>
-  const elements = document.querySelectorAll('.fade-in');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  });
 
-  elements.forEach(el => observer.observe(el));
-</script>
+  <script>
+    const elements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+    elements.forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
