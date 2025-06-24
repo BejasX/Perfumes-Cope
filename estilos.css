@@ -246,11 +246,13 @@ form textarea:focus {
   font-size: 1em;
   font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background: #ffa9b1;
+  background: #ffe9ec;
+  transform: translateY(-2px); /* NUEVO */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* NUEVO */
 }
 .form-contacto {
   max-width: 500px;
@@ -261,6 +263,30 @@ form textarea:focus {
 @media (max-width: 768px) {
   header, footer {
     padding: 1.5em 1em;
+    .hero h2 {
+  font-size: 1.8em;
+}
+
+.hero p {
+  font-size: 1em;
+}
+
+header h1 {
+  font-size: 1.5em;
+}
+
+.producto {
+  padding: 1.5em 1em;
+}
+
+nav a {
+  font-size: 1em;
+}
+
+.inicio, .catalogo, .form-contacto {
+  margin: 1.5em 0.5em;
+  padding: 1em;
+}
   }
 
   nav {
@@ -305,4 +331,20 @@ form textarea:focus {
 nav a.activo {
   border-bottom: 2px solid #a34855;
   color: #a34855;
+}
+.etiqueta {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #bf4053;
+  color: white;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 0.3em 0.7em;
+  border-radius: 8px;
+  z-index: 2;
+}
+
+.producto {
+  position: relative; /* para permitir posicionar la etiqueta */
 }
