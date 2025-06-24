@@ -191,3 +191,64 @@ footer {
 .hero .btn:hover {
   background: #ffe9ec;
 }
+/* Sección general para quienes-somos y contacto */
+.inicio h2 {
+  font-size: 2.2em;
+  color: #a34855;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 0.5em;
+}
+
+.inicio p {
+  font-size: 1.1em;
+  color: #5c4b4b;
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+/* Formulario de contacto */
+form {
+  background: #fff;
+  padding: 2em;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  margin-top: 2em;
+}
+
+form label {
+  font-weight: bold;
+  color: #a34855;
+}
+
+form input,
+form textarea {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 5px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #fcbec6;
+  box-shadow: 0 0 6px #fcbec6;
+}
+
+/* Botón del formulario */
+.btn {
+  background: #fcbec6;
+  color: #3e2b2f;
+  padding: 0.7em 1.5em;
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #ffa9b1;
+}
