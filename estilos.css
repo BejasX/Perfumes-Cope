@@ -302,3 +302,7 @@ form textarea:focus {
   opacity: 1;
   transform: translateY(0);
 }
+nav a.activo {
+  border-bottom: 2px solid #a34855;
+  color: #a34855;
+}
