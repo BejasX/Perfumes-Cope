@@ -31,17 +31,6 @@
   <p>&copy; 2025 Senzia | <a href="mailto:contacto@senzia.com">contacto@senzia.com</a> | Hecho con 💖 por la cooperativa</p>
   </footer>
 
-  <script>
-    const elements = document.querySelectorAll('.fade-in');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    });
-    elements.forEach(el => observer.observe(el));
-  </script>
+<script src="scripts.js"></script>
 </body>
 </html>
