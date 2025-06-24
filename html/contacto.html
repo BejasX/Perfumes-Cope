@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - Cooperativa de Perfumes</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Cooperativa de Perfumes</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="quienes-somos.html">Quiénes somos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
 
+  <main class="inicio">
+    <h2>Contacto</h2>
+    <p>¿Querés hacer un pedido o tenés alguna duda? Escribinos:</p>
+    
+    <form action="https://formspree.io/f/your-email-id" method="POST">
+      <form class="form-contacto">
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre" required style="width: 100%; padding: 0.5em;"><br><br>
+
+      <label for="email">Correo electrónico:</label><br>
+      <input type="email" id="email" name="email" required style="width: 100%; padding: 0.5em;"><br><br>
+
+      <label for="mensaje">Mensaje:</label><br>
+      <textarea id="mensaje" name="mensaje" rows="5" required style="width: 100%; padding: 0.5em;"></textarea><br><br>
+
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Senzia</p>
+  </footer>
+  <script>
+  const elements = document.querySelectorAll('.fade-in');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+
+  elements.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
