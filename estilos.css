@@ -257,3 +257,38 @@ form textarea:focus {
   margin: auto;
   text-align: left;
 }
+/* RESPONSIVE: Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  header, footer {
+    padding: 1.5em 1em;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+  }
+
+  .hero h2 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .inicio, .catalogo, .form-contacto {
+    padding: 1.5em;
+    margin: 2em 1em;
+  }
+
+  .producto img {
+    width: 100%;
+  }
+
+  .btn {
+    font-size: 1em;
+    padding: 0.7em 1.2em;
+  }
+}
