@@ -1,4 +1,3 @@
-// Array de productos (puedes agregar o modificar fácilmente)
 const productos = [
   {
     nombre: "Perfume Floral",
@@ -21,35 +20,12 @@ const productos = [
     imagen: "img/perfume2.jpg",
     enlace: "productos/producto3.html"
   }
-  // Aquí puedes seguir agregando más productos...
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
   const filtroActual = document.getElementById("filtroActual");
-const opcionesFiltro = document.getElementById("opcionesFiltro");
-
-filtroActual.addEventListener("click", () => {
-  opcionesFiltro.style.display = opcionesFiltro.style.display === "block" ? "none" : "block";
-});
-
-opcionesFiltro.addEventListener("click", (e) => {
-  if (e.target.tagName === "LI") {
-    const tipo = e.target.getAttribute("data-tipo");
-    filtroActual.textContent = e.target.textContent;
-    opcionesFiltro.style.display = "none";
-    renderizarProductos(tipo);
-  }
-});
-
-// Para cerrar el dropdown si se hace clic fuera
-document.addEventListener("click", (e) => {
-  if (!e.target.closest(".filtro-personalizado")) {
-    opcionesFiltro.style.display = "none";
-  }
-});
-
+  const opcionesFiltro = document.getElementById("opcionesFiltro");
   const contenedor = document.getElementById("grid-productos");
-  const filtro = document.getElementById("filtro");
 
   function renderizarProductos(tipoSeleccionado = "todos") {
     contenedor.innerHTML = "";
@@ -71,8 +47,23 @@ document.addEventListener("click", (e) => {
     });
   }
 
-  filtro.addEventListener("change", () => {
-    renderizarProductos(filtro.value);
+  filtroActual.addEventListener("click", () => {
+    opcionesFiltro.style.display = opcionesFiltro.style.display === "block" ? "none" : "block";
+  });
+
+  opcionesFiltro.addEventListener("click", (e) => {
+    if (e.target.tagName === "LI") {
+      const tipo = e.target.getAttribute("data-tipo");
+      filtroActual.textContent = e.target.textContent;
+      opcionesFiltro.style.display = "none";
+      renderizarProductos(tipo);
+    }
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".filtro-personalizado")) {
+      opcionesFiltro.style.display = "none";
+    }
   });
 
   renderizarProductos();
