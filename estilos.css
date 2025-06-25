@@ -386,3 +386,15 @@ a.producto {
 .filtro-opciones li:hover {
   background: #2a2a2a;
 }
+.filtro-personalizado {
+  position: relative;
+  z-index: 5;
+}
+
+.filtro-opciones {
+  z-index: 10;
+}
+
+body {
+  scroll-behavior: smooth;
+}
