@@ -5,21 +5,21 @@ const productos = [
     tipo: "floral",
     presentacion: "50ml - Jazmín y rosa",
     imagen: "img/Xerjoff.png",
-    enlace: "productos/perfume-intenso.html"
+    enlace: "productos/producto1.html"
   },
   {
     nombre: "Perfume Floral",
     tipo: "floral",
     presentacion: "50ml - Jazmín y rosa",
     imagen: "img/perfume1.jpg",
-    enlace: "producto1.html"
+    enlace: "productos/producto2.html"
   },
   {
     nombre: "Perfume Cítrico",
     tipo: "citrico",
     presentacion: "50ml - Limón y bergamota",
     imagen: "img/perfume2.jpg",
-    enlace: "producto2.html"
+    enlace: "productos/producto3.html"
   }
   // Aquí puedes seguir agregando más productos...
 ];
