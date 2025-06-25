@@ -25,6 +25,29 @@ const productos = [
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
+  const filtroActual = document.getElementById("filtroActual");
+const opcionesFiltro = document.getElementById("opcionesFiltro");
+
+filtroActual.addEventListener("click", () => {
+  opcionesFiltro.style.display = opcionesFiltro.style.display === "block" ? "none" : "block";
+});
+
+opcionesFiltro.addEventListener("click", (e) => {
+  if (e.target.tagName === "LI") {
+    const tipo = e.target.getAttribute("data-tipo");
+    filtroActual.textContent = e.target.textContent;
+    opcionesFiltro.style.display = "none";
+    renderizarProductos(tipo);
+  }
+});
+
+// Para cerrar el dropdown si se hace clic fuera
+document.addEventListener("click", (e) => {
+  if (!e.target.closest(".filtro-personalizado")) {
+    opcionesFiltro.style.display = "none";
+  }
+});
+
   const contenedor = document.getElementById("grid-productos");
   const filtro = document.getElementById("filtro");
 
