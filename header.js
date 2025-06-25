@@ -1,14 +1,10 @@
 // header.js
 document.addEventListener("DOMContentLoaded", () => {
   const header = document.getElementById("main-header");
-
   if (!header) return;
 
-  // Detecta si estás en una subcarpeta (como /productos/)
-  const esSubcarpeta = window.location.pathname.split("/").length > 2;
-
-  // Si estás en una subcarpeta, usá ../ para volver a raíz
-  const base = esSubcarpeta ? "../" : "";
+  // Base para GitHub Pages
+  const base = "/Perfumes-Cope/";
 
   header.innerHTML = `
     <h1>SENZIA</h1>
