@@ -10,7 +10,7 @@ const productos = [
     nombre: "Armaf - Mandarin Sky",
     tipo: "Citrico",
     presentacion: "100ml - Mandarina y menta",
-    imagen: "img/perfume2.jpg",
+    imagen: "img/Mandarin.png",
     enlace: "productos/producto2.html"
   },
   {
