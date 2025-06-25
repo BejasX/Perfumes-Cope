@@ -13,36 +13,18 @@
   <header id="main-header"></header>
 
   <main class="catalogo fade-in">
-    <div style="text-align: center; margin: 2em;">
-  <label for="filtro">Filtrar por tipo:</label>
-  <select id="filtro">
-    <option value="todos">Todos</option>
-    <option value="floral">Floral</option>
-    <option value="citrico">Cítrico</option>
-    <option value="oriental">Oriental</option>
-  </select>
-<a href="productos/producto1.html" class="producto floral">
-  <div class="etiqueta">Nuevo</div>
-  <img src="img/Xerjoff.png" alt="Perfume floral con jazmín y rosa">
-  <h3>Perfume Floral</h3>
-  <p>50ml - Jazmín y rosa</p>
-</a>
+  <div class="filtros">
+    <label for="filtro">Filtrar por tipo:</label>
+    <select id="filtro">
+      <option value="todos">Todos</option>
+      <option value="floral">Floral</option>
+      <option value="citrico">Cítrico</option>
+      <option value="oriental">Oriental</option>
+    </select>
+  </div>
 
-   <a href="productos/producto2.html" class="producto floral">
-  <div class="etiqueta">Nuevo</div>
-  <img src="img/img.png" alt="Perfume floral con jazmín y rosa">
-  <h3>Perfume Floral</h3>
-  <p>50ml - Jazmín y rosa</p>
-</a>
-   <a href="productos/producto3.html" class="producto floral">
-  <div class="etiqueta">Nuevo</div>
-  <img src="img/img.jpg" alt="Perfume floral con jazmín y rosa">
-      <h3>Perfume Cítrico</h3>
-      <p>50ml - Limón y bergamota</p>
-    </a>
-    
-    <!-- Más productos -->
-  </main>
+  <div id="grid-productos" class="grid-productos"></div>
+</main>
 
   <footer>
   <p>&copy; 2025 Senzia | <a href="mailto:contacto@senzia.com">contacto@senzia.com</a> | Hecho con 💖 por la cooperativa</p>
