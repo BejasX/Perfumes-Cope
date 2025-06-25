@@ -12,7 +12,7 @@ const productos = [
     presentacion: "100ml - Mandarina y menta",
     imagen: "img/perfume2.jpg",
     enlace: "productos/producto2.html"
-  }
+  },
   {
     nombre: "Perfume Floral",
     tipo: "floral",
