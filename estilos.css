@@ -264,3 +264,33 @@ a.producto {
   transform: translateY(-5px);
   box-shadow: 0 0 25px rgba(255, 215, 160, 0.15);
 }
+.filtros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 1.5em;
+}
+
+.filtros label {
+  color: var(--texto);
+  font-size: 1.1em;
+}
+
+.filtros select {
+  background: #1a1a1a;
+  color: var(--dorado);
+  border: 2px solid var(--dorado);
+  border-radius: 25px;
+  padding: 0.5em 1.2em;
+  font-size: 1em;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  transition: border 0.3s ease;
+}
+
+.filtros select:hover,
+.filtros select:focus {
+  border-color: #c8a965;
+}
