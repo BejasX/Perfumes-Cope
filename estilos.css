@@ -294,3 +294,46 @@ a.producto {
 .filtros select:focus {
   border-color: #c8a965;
 }
+.estrellas {
+  color: var(--dorado);
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.estrellas span {
+  color: var(--gris-suave);
+  font-size: 0.9em;
+}
+
+.destacado {
+  background: var(--dorado);
+  color: #121212;
+  display: inline-block;
+  padding: 0.3em 0.8em;
+  border-radius: 20px;
+  font-size: 0.9em;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+.notas h4 {
+  color: var(--dorado);
+  margin-bottom: 0.5em;
+}
+
+.notas ul {
+  list-style: none;
+  padding: 0;
+  color: var(--gris-suave);
+  margin-bottom: 1em;
+}
+
+.notas li {
+  margin-bottom: 0.3em;
+}
+
+.sello {
+  color: var(--dorado);
+  font-size: 0.9em;
+  margin-top: 1em;
+}
