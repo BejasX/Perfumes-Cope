@@ -56,6 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const tipo = e.target.getAttribute("data-tipo");
       filtroActual.textContent = e.target.textContent;
       opcionesFiltro.style.display = "none";
+      filtroActual.blur();
       renderizarProductos(tipo);
     }
   });
