@@ -222,3 +222,10 @@ a.producto {
   color: inherit;
   display: block;
 }
+.catalogo .producto img {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
